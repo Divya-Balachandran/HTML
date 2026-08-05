@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>Online Examination Registration System</title>
+</head>
+
+<body bgcolor="lightblue">
+
+<center>
+
+<h1>Online Examination Registration System</h1>
+
+<button onclick="registerExam()">Register for Exam</button>
+
+</center>
+
+
+<script>
+
+function registerExam()
+{
+alert("Welcome to Online Examination Portal.\nRegistration process started.");
+var confirmExam = confirm("Do you want to register for the examination?");
+     if(confirmExam)
+    {
+        var name = prompt("Enter your name:");
+
+        if(name != null && name != "")
+        {
+            var subject = prompt("Enter the subject name:");
+
+            if(subject != null && subject != "")
+            {
+                alert("Exam Registration Completed Successfully!\nStudent Name: "
+                + name + "\nSubject: " + subject);
+            }
+            else
+            {
+                alert("Subject name not entered.");
+            }
+        }
+        else
+        {
+            alert("Name not entered.");
+        }
+    }
+    else
+    {
+        alert("Exam registration cancelled.");
+    }
+}
+
+</script>
+
+</body>
+</html>
